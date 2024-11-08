@@ -10,7 +10,7 @@ namespace Bank
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Cos");
+            Console.WriteLine("Hello World!");
             Console.ReadKey();
         }
     }
