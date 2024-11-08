@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+    background: linear-gradient(to top right,#38C72A,#EEEEEE,#EEEEEE,#EEEEEE,#EEEEEE,#38C72A);
+    background-attachment: fixed;
+    font-family: montserrat, arial, verdana;
+    letter-spacing: 0.02em;
+    color: #3e3e3e;
+}
+header{
+    text-align: center;
+}
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 3px -4px rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 2px 7px 0 rgba(0, 0, 0, 0.12);
+    background-color: white;
+    width: 350px;
+    height: 450px;
+	margin: 30px auto;
+	text-align: center;
+}
+.send{
+    border-radius: 10px;
+    margin:40px;
+    padding:10px;
+    cursor: pointer;
+    background-color: #00DC00;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+.send:hover{
+    background-color: #00dc0089;
+}
+input{
+    border-radius: 3px;
+    padding: 2px;
+}
+input:hover{
+    background-color: #efeaea;
+}

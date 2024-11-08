@@ -12,6 +12,8 @@ namespace Bank
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World!");
+            Console.ReadKey();
            
             //var builder = WebApplication.CreateBuilder(args);
             //builder.Services.AddScoped<User, AccountHistory>();
