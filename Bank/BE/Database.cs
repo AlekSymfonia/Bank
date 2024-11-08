@@ -25,6 +25,7 @@ namespace Database
 
     public class AccountHistory()
     {
+
         public int Id_history { get; set; }
         public bool transction { get; set; }  // true -> payment ; false -> paycheck
         public int howMuchMoney { get; set; }
