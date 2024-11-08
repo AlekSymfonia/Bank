@@ -1,33 +1,20 @@
-﻿using EFCoreInMemoryDbDemo.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SQLite;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Database
+namespace Bank
 {
-    public class ApiContext : DbContext
+    internal class Database
     {
-        protected override void OnConfiguring
-       (DbContextOptionsBuilder optionsBuilder)
+        static void Main(string[] args)
         {
-            optionsBuilder.UseInMemoryDatabase(databaseName: "BankDB");
+            using (var conn = new SQLiteConnection("Data Source=Bank.db"))
+            {
+                conn.Open();
+            }
         }
-        public DbSet<User> Users { get; set; }
-        public DbSet<AccountHistory> History { get; set; }
-    }
-
-    public class User()
-    {
-        public int Id_user { get; set; }
-        public string name { get; set; }
-        public string surname { get; set; }
-        public string accountNumber { get; set; }
-        public int money { get; set; }
-    }
-
-    public class AccountHistory()
-    {
-        public int Id_history { get; set; }
-        public bool transction { get; set; }  // true -> payment ; false -> paycheck
-        public int howMuchMoney { get; set; }
-        public int Id_u { get; set; }
     }
 }
